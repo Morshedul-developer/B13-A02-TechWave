@@ -1,33 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body class="inter-font">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="inter-font">
     <!-- header section -->
-     <header>
-        <nav class="navbar flex">
-            <img class="logo" src="assets/main_logo.png" alt="main_logo">
-            <ul class="nav-links flex">
-                <li class="nav-item"><a class="nav-link" href="">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Episodes</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Host</a></li>
-            </ul>
-            <div class="nav-icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <button class="primary-btn">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
-        </nav>
-     </header>
+    <header>
+      <nav class="navbar container flex">
+        <img class="logo" src="assets/main_logo.png" alt="main_logo" />
+        <ul class="nav-links flex">
+          <li class="nav-item"><a class="nav-link" href="">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Episodes</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Host</a></li>
+        </ul>
+        <div class="nav-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <button class="primary-btn">
+          Subscribe<i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+
+      <!-- banner section -->
+      <!-- <div class="banner">
+        <div class="banner-image">
+          <img class="banner-image-1" src="assets/hero-circle.png" alt="" />
+        </div>
+        <div class="banner-micro">
+          <img class="banner-image-2" src="assets/microphone.png" alt="" />
+        </div>
+        <div class="banner-info">
+          <h1 class="banner-title">TechWave</h1>
+          <p class="banner-des">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <button>
+            <img src="assets/spotify.png" alt="" />Listen on Spotify
+          </button>
+          <button><img src="assets/message.png" alt="" />Subscribe</button>
+        </div>
+      </div> -->
+    </header>
+
 
     <!-- main section -->
-     <main></main>
+    <main>
+      <!-- podcast section -->
+      <section class="podcast">
+        <div class="container">
+          <div class="podcast-info">
+            <h3 class="section-title">About the Podcast</h3>
+            <p class="podcast-description">
+              TechWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology. <br> We break down complex topics into digestible
+              insights, explore productivity strategies that actually work, <br> and
+              share stories of personal growth from industry leaders. <br><br> Join
+              thousands of young professionals and tech enthusiasts who start
+              their day with TechWave.
+            </p>
+          </div>
+          <!-- review cards -->
+           <div class="review-cards grid">
+            <div class="review-card">
+                <h4 class="review-card-title">150K+</h4>
+                <p class="review-card-des">Monthly Listeners</p>
+            </div>
+            <div class="review-card">
+                <h4 class="review-card-title">200+</h4>
+                <p class="review-card-des">Episodes Published</p>
+            </div>
+            <div class="review-card">
+                <h4 id="star" class="review-card-title">4.9 <i class="fa-solid fa-star"></i></h4>
+                <p class="review-card-des">Average Rating</p>
+            </div>
+            <div class="review-card">
+                <h4 class="review-card-title">50+</h4>
+                <p class="review-card-des">Industry Experts</p>
+            </div>
+           </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer section -->
-     <footer></footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
