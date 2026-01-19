@@ -173,7 +173,7 @@ header {
 /* why choose section related styles */
 .why-choose {
   background-color: #230e3d;
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
 }
 .why-choose .section-title {
   margin-bottom: 40px;
@@ -203,7 +203,8 @@ header {
   color: white;
   margin-bottom: 16px;
 }
-.feature-card-des {
+.feature-card-des,
+.episode-card-des {
   font-size: 1rem;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
@@ -218,6 +219,52 @@ header {
 #card-3,
 #card-4 {
   grid-column: span 2;
+}
+
+/* episodes section related styles */
+.episodes {
+  background-color: #1a0b2e;
+  padding: 120px 0;
+}
+.episodes .section-title {
+  margin-bottom: 40px;
+}
+.episode-cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.episode-card{
+    background-color: #250d44;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.episode-video iframe{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.episode-card-info {
+  padding: 24px;
+}
+.episode-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 12px;
+}
+.episode-card-des {
+    margin-bottom: 12px;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #00FF88;
 }
 
 /* Responsive codes */
@@ -309,7 +356,7 @@ header {
     padding: 60px 0 60px 0;
   }
   .feature-cards {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
   .feature-card {
