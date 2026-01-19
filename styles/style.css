@@ -142,6 +142,23 @@ header {
   align-items: center;
   justify-content: center;
 }
+.badge-text{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.badge{
+  padding: 8px 16px;
+  background-color: #00FF88;
+  box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+  position: absolute;
+  top: 4%;
+  left: 56%;
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+}
 .banner-title {
   font-size: 3.75rem;
   font-weight: 800;
