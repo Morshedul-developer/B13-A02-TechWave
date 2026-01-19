@@ -261,21 +261,26 @@ header {
     gap: 40px;
   }
 
+  .why-choose {
+    padding: 40px 0 40px 0;
+  }
   .feature-cards {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .feature-card{
-    width: 100%;
+  .feature-card {
+    padding: 24px;
+  }
+  #card-1,
+  #card-2,
+  #card-3,
+  #card-4 {
+    grid-column: auto;
+    grid-row: auto;
   }
   #card-1 img {
     margin-top: 0;
   }
-  #card-2,
-#card-3,
-#card-4 {
-  grid-column: span 0;
-}
 }
 
 /* for tablet devices */
