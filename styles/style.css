@@ -11,8 +11,8 @@ html {
   font-size: 16px;
 }
 
-body{
-    background-color: #1A0B2E;
+body {
+  background-color: #1a0b2e;
 }
 
 .inter-font {
@@ -74,8 +74,7 @@ body{
 /* header section related styles */
 header {
   background-color: #1a0b2e;
-  border-bottom: 1px solid #412567;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .logo {
   cursor: pointer;
@@ -86,6 +85,7 @@ header {
 .navbar {
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 }
 .nav-links {
   gap: 32px;
@@ -109,25 +109,83 @@ header {
 .banner {
   background-image: url("../assets/hero-bg.png");
   width: 100%;
-  min-height: 592px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
+  border-top: 1px solid #412567;
+}
+.banner-container {
+  text-align: center;
+}
+.banner-images {
   position: relative;
-  /* padding-top: 101px; */
 }
-.banner-image {
+.banner-images img {
+  width: 100%;
+}
+.banner-image-01 {
+  position: relative;
+}
+.banner-image-02 {
   position: absolute;
-  left: 39%;
-  top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
-.banner-micro {
-  position: absolute;
-  left: 39%;
-  top: 10%;
+.banner-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.banner-image-1 {
-  /* width: 96%; */
+.banner-title {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
+.banner-des {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+}
+.banner-info button {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 51%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) 100%;
+  border-radius: 10000px;
+  -webkit-border-radius: 10000px;
+  -moz-border-radius: 10000px;
+  -ms-border-radius: 10000px;
+  -o-border-radius: 10000px;
+}
+.banner-buttons {
+  justify-content: center;
+  gap: 8px;
+}
+#banner-button-2 {
+  color: #00ff88;
+  background: transparent;
+  border: 1px solid #00ff88;
 }
 
 /* podcast section related styles */
@@ -306,15 +364,15 @@ header {
 .host-des {
   margin-bottom: 16px;
 }
-.host-icons{
-    align-items: center;
-    gap: 12px;
+.host-icons {
+  align-items: center;
+  gap: 12px;
 }
 .host-icons > div {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  border: 1px solid #533C72;
+  border: 1px solid #533c72;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -325,45 +383,40 @@ header {
 }
 
 /* footer section related styles */
-footer{
-    background-image: url(../assets/footer-bg.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0;
+footer {
+  background-image: url(../assets/footer-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
 }
-.footer-container{
-    text-align: center;
+.footer-container {
+  text-align: center;
 }
-.footer-cards{
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 32px;
+.footer-cards {
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
 }
-.footer-card{
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+.footer-card {
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
-.footer-logo{
-    margin-bottom: 32px;
+.footer-logo {
+  margin-bottom: 32px;
 }
-.footer-card-des{
-    font-size: 1rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+.footer-card-des {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
 }
-.footer-des{
-    font-size: 1rem;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.6);
+.footer-des {
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
-
-
-
-
-
 
 /* Responsive codes */
 
@@ -378,6 +431,12 @@ footer{
     font-size: 2rem;
   }
 
+  .logo{
+    width: 50%;
+  }
+  .navbar{
+    padding-bottom: 30px;
+  }
   .nav-links {
     display: none;
   }
@@ -389,8 +448,11 @@ footer{
   }
 
   .banner {
-    background-size: contain;
-    background-position: top;
+    padding: 40px 0;
+  }
+  .banner-images img {
+    width: 87%;
+    margin-top: 20px;
   }
 
   .podcast {
@@ -443,33 +505,29 @@ footer{
   }
 
   .host {
-  padding-bottom: 40px;
-}
-  .host-banner{
+    padding-bottom: 40px;
+  }
+  .host-banner {
     flex-direction: column;
   }
-  .host-info{
+  .host-info {
     text-align: center;
   }
-  .host-icons{
+  .host-icons {
     justify-content: center;
   }
 
-  footer{
+  footer {
     padding: 40px 0;
   }
-  .footer-logo{
+  .footer-logo {
     width: 65%;
   }
-  .footer-cards{
+  .footer-cards {
     flex-wrap: wrap;
     gap: 30px;
   }
 }
-
-
-
-
 
 /* for tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -479,6 +537,9 @@ footer{
     padding: 0 16px;
   }
 
+  .navbar{
+    padding-bottom: 30px;
+  }
   .nav-links {
     display: none;
   }
@@ -489,9 +550,12 @@ footer{
     display: block;
   }
 
-  .banner {
-    background-size: contain;
-    background-position: top;
+  .banner{
+    padding: 60px 0;
+  }
+  .banner-images img {
+    width: 85%;
+    margin-top: 20px;
   }
 
   .why-choose {
@@ -532,25 +596,25 @@ footer{
   }
 
   .host {
-  padding-bottom: 60px;
-}
-.host-banner{
+    padding-bottom: 60px;
+  }
+  .host-banner {
     flex-direction: column;
   }
-  .host-info{
+  .host-info {
     text-align: center;
   }
-  .host-icons{
+  .host-icons {
     justify-content: center;
   }
 
-  footer{
+  footer {
     padding: 60px 0;
   }
-  .footer-logo{
+  .footer-logo {
     width: 65%;
   }
-  .footer-cards{
+  .footer-cards {
     flex-wrap: wrap;
   }
 }
