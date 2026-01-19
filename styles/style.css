@@ -11,6 +11,10 @@ html {
   font-size: 16px;
 }
 
+body{
+    background-color: #1A0B2E;
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -320,6 +324,48 @@ header {
   -o-border-radius: 50%;
 }
 
+/* footer section related styles */
+footer{
+    background-image: url(../assets/footer-bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+.footer-container{
+    text-align: center;
+}
+.footer-cards{
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+.footer-card{
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.footer-logo{
+    margin-bottom: 32px;
+}
+.footer-card-des{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-des{
+    font-size: 1rem;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
 /* Responsive codes */
 
 /* for mobile devices */
@@ -396,12 +442,26 @@ header {
   .episode-card-info {
     padding: 16px;
   }
+
+  .host {
+  padding-bottom: 40px;
+}
+  .host-banner{
+    flex-direction: column;
+  }
+  .host-info{
+    text-align: center;
+  }
+  .host-icons{
+    justify-content: center;
+  }
 }
 
 /* for tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .navbar,
-  .container {
+  .container,
+  .footer-container {
     padding: 0 16px;
   }
 
@@ -455,5 +515,18 @@ header {
   }
   .episode-card-info {
     padding: 18px;
+  }
+
+  .host {
+  padding-bottom: 60px;
+}
+.host-banner{
+    flex-direction: column;
+  }
+  .host-info{
+    text-align: center;
+  }
+  .host-icons{
+    justify-content: center;
   }
 }
