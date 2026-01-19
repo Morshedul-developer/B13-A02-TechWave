@@ -142,13 +142,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.badge-text{
+.badge-text {
   font-size: 1.125rem;
   font-weight: 600;
 }
-.badge{
+.badge {
   padding: 8px 16px;
-  background-color: #00FF88;
+  background-color: #00ff88;
   box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
   position: absolute;
   top: 4%;
@@ -448,10 +448,10 @@ footer {
     font-size: 2rem;
   }
 
-  .logo{
+  .logo {
     width: 50%;
   }
-  .navbar{
+  .navbar {
     padding-bottom: 30px;
   }
   .nav-links {
@@ -471,8 +471,15 @@ footer {
     width: 80%;
     margin-top: 20px;
   }
-  .banner-info button{
+  #banner-img-02 {
+    width: 55%;
+  }
+  .banner-info button {
     padding: 12px 16px;
+  }
+  .badge {
+    top: 10%;
+    left: 63%;
   }
 
   .podcast {
@@ -557,7 +564,7 @@ footer {
     padding: 0 16px;
   }
 
-  .navbar{
+  .navbar {
     padding-bottom: 30px;
   }
   .nav-links {
@@ -570,12 +577,19 @@ footer {
     display: block;
   }
 
-  .banner{
+  .banner {
     padding: 60px 0;
   }
   .banner-images img {
     width: 85%;
     margin-top: 20px;
+  }
+  #banner-img-02 {
+    width: 55%;
+  }
+  .badge {
+    top: 10%;
+    left: 58%;
   }
 
   .why-choose {
