@@ -285,7 +285,8 @@ header {
 
 /* for tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .navbar {
+  .navbar,
+  .feature-cards {
     padding: 0 16px;
   }
 
@@ -302,5 +303,26 @@ header {
   .banner {
     background-size: contain;
     background-position: top;
+  }
+
+  .why-choose {
+    padding: 60px 0 60px 0;
+  }
+  .feature-cards {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+  }
+  .feature-card {
+    padding: 30px;
+  }
+  #card-1,
+  #card-2,
+  #card-3,
+  #card-4 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  #card-1 img {
+    margin-top: 0;
   }
 }
