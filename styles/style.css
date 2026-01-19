@@ -204,7 +204,8 @@ header {
   margin-bottom: 16px;
 }
 .feature-card-des,
-.episode-card-des {
+.episode-card-des,
+.host-des {
   font-size: 1rem;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
@@ -233,16 +234,16 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.episode-card{
-    background-color: #250d44;
-    cursor: pointer;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+.episode-card {
+  background-color: #250d44;
+  cursor: pointer;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
- .episode-video {
+.episode-video {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -261,15 +262,62 @@ header {
   margin-bottom: 12px;
 }
 .episode-card-des {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
-.clock{
-    display: flex;
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #00ff88;
+}
+
+/* host section related styles */
+.host {
+  background-color: #1a0b2e;
+  padding-bottom: 120px;
+}
+.host .section-title {
+  margin-bottom: 40px;
+}
+.host-banner {
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.host-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+.host-des {
+  margin-bottom: 16px;
+}
+.host-icons{
     align-items: center;
-    gap: 6px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #00FF88;
+    gap: 12px;
+}
+.host-icons > div {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #533C72;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /* Responsive codes */
@@ -280,7 +328,6 @@ header {
   .container {
     padding: 0 16px;
   }
-  
 
   .section-title {
     font-size: 2rem;
@@ -335,26 +382,21 @@ header {
     margin-top: 0;
   }
 
-  .episodes{
+  .episodes {
     padding: 40px 0 60px 0;
   }
   .episode-cards {
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-.episode-video iframe{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .episode-video iframe {
     width: 100%;
     height: 100%;
+  }
+  .episode-card-info {
+    padding: 16px;
+  }
 }
-.episode-card-info {
-  padding: 16px;
-}
-}
-
-
-
-
-
 
 /* for tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -399,19 +441,19 @@ header {
     margin-top: 0;
   }
 
-  .episodes{
+  .episodes {
     padding: 40px 0 60px 0;
   }
   .episode-cards,
   .review-cards {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-.episode-video iframe{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .episode-video iframe {
     width: 100%;
     height: 100%;
-}
-.episode-card-info {
-  padding: 18px;
-}
+  }
+  .episode-card-info {
+    padding: 18px;
+  }
 }
