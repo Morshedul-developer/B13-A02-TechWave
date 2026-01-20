@@ -128,24 +128,24 @@ header {
   position: relative;
 }
 @keyframes scaling {
-  0%{
+  0% {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+  }
 }
-100%{
-  transform: scale(.9);
-  -webkit-transform: scale(.9);
-  -moz-transform: scale(.9);
-  -ms-transform: scale(.9);
-  -o-transform: scale(.9);
-}
-}
-.banner-image-2{
-  animation: scaling 1.5s ease-in-out .1s infinite alternate;
-  -webkit-animation: scaling 1.2s ease-in-out .1s infinite alternate;
+.banner-image-2 {
+  animation: scaling 1.2s ease-in-out 0.1s infinite alternate;
+  -webkit-animation: scaling 1.2s ease-in-out 0.1s infinite alternate;
 }
 .banner-image-02 {
   position: absolute;
@@ -163,20 +163,20 @@ header {
   justify-content: center;
 }
 @keyframes moving {
-  0%{
+  0% {
     transform: rotate(10deg);
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -ms-transform: rotate(10deg);
     -o-transform: rotate(10deg);
-}
-100%{
-  transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-}
+  }
+  100% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
 }
 .badge {
   padding: 8px 16px;
@@ -507,8 +507,8 @@ footer {
   }
 
   .banner {
-  background-image: url("../assets/mobile_bg.png");
-}
+    background-image: url("../assets/mobile_bg.png");
+  }
   .banner {
     padding: 40px 0;
   }
@@ -524,7 +524,7 @@ footer {
   }
   .badge {
     top: 10%;
-    left: 63%;
+    left: 59%;
   }
 
   .podcast {
@@ -590,9 +590,9 @@ footer {
   }
 
   footer {
-  background-image: url(../assets/footer_bg.png);
-  background-size: 100% 100%;
-}
+    background-image: url(../assets/footer_bg.png);
+    background-size: 100% 100%;
+  }
   footer {
     padding: 40px 0;
   }
